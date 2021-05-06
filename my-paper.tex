@@ -1,0 +1,61 @@
+% Simple example. Note that everything after the % is treated as a comment and ignored
+
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+
+% preamble
+\title{First example}
+\author{David}
+\date{\today}
+
+% main document
+\begin{document}
+   \maketitle % creates title using info in preamble
+    
+   \begin{abstract}
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.
+   \end{abstract}
+
+   \section{First section}
+    
+   This is the \textbf{first section} in my \LaTeX document.
+   I can include some maths directly in the text like $a^2+b^2=c^2$. Or I can create it separately.
+
+   \begin{equation}
+      \gamma^2+\theta^2=\omega^2
+   \end{equation}
+
+   \begin{equation}
+      \gamma^2+\theta^2=\omega^2
+   \end{equation}
+
+   \begin{equation}
+      \label{stuff}
+      \gamma^2+\theta^2=\omega^2
+   \end{equation}
+
+   That was so easy.
+	
+   Because I left a          blank line, this now
+   becomes a new paragraph.
+
+   \begin{figure}[t]
+   \caption{A complex diagram}
+      \centering
+      \includegraphics[width=0.8\textwidth]{fig1}
+   \end{figure}
+
+
+   \section{A random section}
+
+   In equation \ref{stuff} I found that Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. 
+   
+   David said something \cite{Lowe_2021a} but Josh disagreed \cite{Burridge_2018a} Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. 
+   
+   Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. Blah blah blah blah blah. 
+
+	\bibliography{my-bib}{}
+	\bibliographystyle{apalike}
+	% \bibliographystyle{ieeetran}
+
+\end{document}
